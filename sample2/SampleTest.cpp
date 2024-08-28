@@ -25,8 +25,8 @@ class Task2 : public BaseTask
     {
         for (uint32_t i = 0; i < 10; i++) {
             WaitSec(1);
-            std::cout << "Task 2 : Signal event" << std::endl;
-            evt_.Signal();
+            std::cout << "Task 2 : Set event" << std::endl;
+            evt_.Set();
         }
     }
 
